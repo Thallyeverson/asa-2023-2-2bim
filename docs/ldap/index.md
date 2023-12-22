@@ -2,6 +2,8 @@
 
 ## Instalação
 
+Para poder usar o LDAP, é preciso instalar o servidor samba, e para isso usamos o seguinte comando
+
 
 
 ## Configuração
