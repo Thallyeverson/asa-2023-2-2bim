@@ -69,14 +69,37 @@ Ficarão dessa forma:
 [![OUvendedores](https://i.im.ge/2023/12/29/xxhrl9.OUvendedores.png)](https://im.ge/i/xxhrl9)
 [![OUrh](https://i.im.ge/2023/12/29/xxhu0X.OUrh.png)](https://im.ge/i/xxhu0X)
 
+Depois basta adicionar os usuários de cada pasta dentro de seu grupo.
 
+Para fazer isso, basta selecionar todos os usuários, clicar com o botão direito do mouse e "Adicionar a um grupo"
 
-Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
+Lá basta digitar o nome do grupo que você deseja.
 
-- Criar duas OU: `vendedores` e `rh`;
-- Mover o grupo `sobrenome1` e seus membros para a OU `vendedores`;
-- Mover os grupo `sobrenome2` e seus membros para a OU `rh`.
+Eles ficarão assim:
 
-## Teste
+[![GrupoOliveira](https://i.im.ge/2023/12/29/xxhCMa.GrupoOliveira.png)](https://im.ge/i/xxhCMa)
+[![GrupoSilvestre](https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png)](https://im.ge/i/xxhxEy)
 
+#### Criando pastas compartilha
+
+Para criar as pastas compartilhadas para esses grupos vamo na mv linux e usamos o código:
+    mkdir /srv/samba/oliveira
+    mkdir /srv/samba/silvestre
+
+serão criadas pastas no serviço samba e elas serão configuradas da seguinte forma:
+
+acessando o aquivo "/etc/samba/smb.conf"
+
+[![CONFIGDECOMPARTILHAMENTO](https://i.im.ge/2023/12/29/xxiAFC.CONFIGDECOMPARTILHAMENTO.png)](https://im.ge/i/xxiAFC)
+
+após isso é só entrar na máquina windows, digitar o comando "\\noronha" que é o nome da máquina e ver as pastas compartilhadas. 
+Elas só poderão ser acessadas pelos usuários especificos de cada grupo.
+
+[![usuárioOliveira](https://i.im.ge/2023/12/29/xx0Uam.usuarioOliveira.png)](https://im.ge/i/xx0Uam)
+[![usuariosilvestre](https://i.im.ge/2023/12/29/xx0x1z.usuariosilvestre.png)](https://im.ge/i/xx0x1z)
+
+-   Se tentar acessar a pasta com um usuário de um outro grupo, aparecerá essa mensagem:
+
+[![usuarioerrado1](https://i.im.ge/2023/12/29/xx9onh.usuarioerrado1.png)](https://im.ge/i/xx9onh)
+[![usuarioerrado2](https://i.im.ge/2023/12/29/xx9LkW.usuarioerrado2.png)](https://im.ge/i/xx9LkW)
 
