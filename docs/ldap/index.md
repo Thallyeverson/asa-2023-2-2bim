@@ -2,8 +2,6 @@
 
 ## Instalação
 
-Para poder usar o LDAP, é preciso instalar o servidor samba, e para isso usamos o seguinte comando
-
 É preciso de uma máquina virtual linux com o samba e uma maquina com windowns 7 para se comunicar com o samba;
 
 Para instalar o samba na maquina virtual linux você precisará dar os seguintes comandos:
@@ -49,57 +47,18 @@ Clique numa pasta de nome "Unidade Organizacional", ou clique com o botão direi
 
 Crie duas OUs, uma de nome "vendedores" e outra de nome "rh"
 
-#### Criando os grupos
+#### Movendo o grupo pela interface gráfica
 
-*Dentro da OU `vendedores` vamos criar o grupo `oliveira`
-*Dentro da OU `rh` vamos criar o grupo `silvestre`
+Para mover o grupos para as novas OUs bas clicar com o botão direito do mouse, selecionar "Mover" e direcionar o destino.
 
-Para criar os grupos basta clicar com o botão direito do mouse, depois em "novo" e "grupo"
+Desse geito:
 
-#### Criando os usuários
+[![mover](https://i.im.ge/2023/12/29/xxkUDK.mover.png)](https://im.ge/i/xxkUDK)
 
-Para cada pasta vamos criar 4 usuários, para criar os usuários clicamos com o botão direito do mouse, "Novo" > "Usuário"
 
-[![grupoexemplo](https://i.im.ge/2023/12/29/xxUeCS.grupoexemplo.png)](https://im.ge/i/xxUeCS)
 
-Após criar todos os usuários, mover eles para dentro das OUs desejadas.
 
-Ficarão dessa forma:
 
-[![OUvendedores](https://i.im.ge/2023/12/29/xxhrl9.OUvendedores.png)](https://im.ge/i/xxhrl9)
-[![OUrh](https://i.im.ge/2023/12/29/xxhu0X.OUrh.png)](https://im.ge/i/xxhu0X)
-
-Depois basta adicionar os usuários de cada pasta dentro de seu grupo.
-
-Para fazer isso, basta selecionar todos os usuários, clicar com o botão direito do mouse e "Adicionar a um grupo"
-
-Lá basta digitar o nome do grupo que você deseja.
-
-Eles ficarão assim:
-
-[![GrupoOliveira](https://i.im.ge/2023/12/29/xxhCMa.GrupoOliveira.png)](https://im.ge/i/xxhCMa)
-[![GrupoSilvestre](https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png)](https://im.ge/i/xxhxEy)
-
-#### Criando pastas compartilha
-
-Para criar as pastas compartilhadas para esses grupos vamo na mv linux e usamos o código:
-    mkdir /srv/samba/oliveira
-    mkdir /srv/samba/silvestre
-
-serão criadas pastas no serviço samba e elas serão configuradas da seguinte forma:
-
-acessando o aquivo "/etc/samba/smb.conf"
-
-[![CONFIGDECOMPARTILHAMENTO](https://i.im.ge/2023/12/29/xxiAFC.CONFIGDECOMPARTILHAMENTO.png)](https://im.ge/i/xxiAFC)
-
-após isso é só entrar na máquina windows, digitar o comando "\\noronha" que é o nome da máquina e ver as pastas compartilhadas. 
-Elas só poderão ser acessadas pelos usuários especificos de cada grupo.
-
-[![usuárioOliveira](https://i.im.ge/2023/12/29/xx0Uam.usuarioOliveira.png)](https://im.ge/i/xx0Uam)
-[![usuariosilvestre](https://i.im.ge/2023/12/29/xx0x1z.usuariosilvestre.png)](https://im.ge/i/xx0x1z)
-
--   Se tentar acessar a pasta com um usuário de um outro grupo, aparecerá essa mensagem:
-
-[![usuarioerrado1](https://i.im.ge/2023/12/29/xx9onh.usuarioerrado1.png)](https://im.ge/i/xx9onh)
-[![usuarioerrado2](https://i.im.ge/2023/12/29/xx9LkW.usuarioerrado2.png)](https://im.ge/i/xx9LkW)
-
+- Criar duas OU `vendedores` e `rh`
+- Mover o Grupo `sobrenome1` e seus membros para a OU `vendedores`;
+- Mover o Grupo `sobrenome2` e seus membros para a OU `rh`;
