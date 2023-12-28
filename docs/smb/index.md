@@ -6,7 +6,7 @@
 
 Para instalar o samba na maquina virtual linux você precisará dar os seguintes comandos:
 
--   apk add samba-dc krb5
+    apk add samba-dc krb5
 
 
 ## Configuração
