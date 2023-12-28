@@ -13,15 +13,15 @@ Para instalar o samba na maquina virtual linux você precisará dar os seguintes
 
 Para configurar precisaremos colocar um nome para nossa máquina virtual
 
-*No caso o nome ficou noronha.pernambuco.lab
+- No caso o nome ficou noronha.pernambuco.lab
 
 E o nome do dominio
 
-*No caso será pernambuco.lab
+- No caso será pernambuco.lab
 
 Para colocar o domínio na máquina virtual windows você fará o seguinte:
 
-*Vá em "Painel de controle" > "Sistema e Segurança" > "Sistema" > "Alterar configurações"
+- Vá em "Painel de controle" > "Sistema e Segurança" > "Sistema" > "Alterar configurações"
 
 Você abrirá uma aba de propriedades do sistema, nela você pode alterar o nome da máquina e definir um domínio para acessar.
 
