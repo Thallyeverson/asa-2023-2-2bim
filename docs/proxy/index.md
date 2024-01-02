@@ -33,17 +33,17 @@ Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:
 
 As ACLs usadas como regras para os testes foram as seguintes:
 
-    acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com
-    acl firefox browser Firefox
-    acl hora_entrada time MTWHF 21:30-23:59
-    acl ipblock dst 104.16.36.133
+    *acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com
+    *acl firefox browser Firefox
+    *acl hora_entrada time MTWHF 21:30-23:59
+    *acl ipblock dst 104.16.36.133
 
 E para aplicar essas regras usamos os comandos:
 
-    http_access deny site_ban
-    http_access allow hora_entrada
-    http_access deny firefox
-    http_access deny ipblock
+    *http_access deny site_ban
+    *http_access allow hora_entrada
+    *http_access deny firefox
+    *http_access deny ipblock
 
 Basicamente, 
 
@@ -68,4 +68,16 @@ Os logs de utilzaçõa das regras:
 
 [![Tempo_real](https://i.im.ge/2024/01/03/3ME4vp.Tempo-real.png)](https://im.ge/i/3ME4vp)
 
-E após 
+Os sites que as regras proxys foram definidas, ficaram da seguinte maneira:
+
+[![globo_block](https://i.im.ge/2024/01/03/3MxAnq.globo-block.png)](https://im.ge/i/3MxAnq)
+[![wikipedia_block](https://i.im.ge/2024/01/03/3MxxPP.wikipedia-block.png)](https://im.ge/i/3MxxPP)
+[![facebook](https://i.im.ge/2024/01/03/3Mxbuf.facebook.png)](https://im.ge/i/3Mxbuf)
+
+Ao tentar usar o github com a permissão de browser, não é permitido
+
+[![GITHUB](https://i.im.ge/2024/01/03/3M3S4C.GITHUB.png)](https://im.ge/i/3M3S4C)
+
+E após entrar no tempo definido na regra da 3ª linha, o site github é habilitado para uso
+
+[![githubtempo](https://i.im.ge/2024/01/03/3M3fbD.githubtempo.png)](https://im.ge/i/3M3fbD)
