@@ -40,13 +40,13 @@ As ACLs usadas como regras para os testes foram as seguintes:
 
 E para aplicar essas regras usamos os comandos:
 
-    *http_access deny site_ban
+    http_access deny site_ban
 
-    *http_access allow hora_entrada
+    http_access allow hora_entrada
 
-    *http_access deny firefox
+    http_access deny firefox
 
-    *http_access deny ipblock
+    http_access deny ipblock
 
 Basicamente, 
 
