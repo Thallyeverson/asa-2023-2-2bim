@@ -33,10 +33,10 @@ Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:
 
 As ACLs usadas como regras para os testes foram as seguintes:
 
-    ```acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com 
-    ```acl firefox browser Firefox
-    ```acl hora_entrada time MTWHF 21:30-23:59
-    ```acl ipblock dst 104.16.36.133
+    acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com
+        acl firefox browser Firefox
+            acl hora_entrada time MTWHF 21:30-23:59
+                acl ipblock dst 104.16.36.133
 
 E para aplicar essas regras usamos os comandos:
 
