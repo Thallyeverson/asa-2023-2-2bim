@@ -56,9 +56,14 @@ Desse geito:
 [![mover](https://i.im.ge/2023/12/29/xxkUDK.mover.png)](https://im.ge/i/xxkUDK)
 
 
+## Testes
 
+As OUs "vendedores" e "rh" ficarão desse geitos com os respequitivos usuários;
 
+[![OUvendedores](https://i.im.ge/2023/12/29/xxhrl9.OUvendedores.png)](https://im.ge/i/xxhrl9)
+[![OUrh](https://i.im.ge/2023/12/29/xxhu0X.OUrh.png)](https://im.ge/i/xxhu0X)
 
-- Criar duas OU `vendedores` e `rh`
-- Mover o Grupo `sobrenome1` e seus membros para a OU `vendedores`;
-- Mover o Grupo `sobrenome2` e seus membros para a OU `rh`;
+E adicionando usuários nos grupos ficará da seguinte forma; 
+
+[![GrupoOliveira](https://i.im.ge/2023/12/29/xxhCMa.GrupoOliveira.png)](https://im.ge/i/xxhCMa)
+[![GrupoSilvestre](https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png)](https://im.ge/i/xxhxEy)

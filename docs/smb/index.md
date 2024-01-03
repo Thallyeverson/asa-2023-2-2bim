@@ -58,6 +58,9 @@ acessando o aquivo "/etc/samba/smb.conf"
 após isso é só entrar na máquina windows, digitar o comando "\\noronha" que é o nome da máquina e ver as pastas compartilhadas. 
 Elas só poderão ser acessadas pelos usuários especificos de cada grupo.
 
+## Testes
+
+
 [![usuárioOliveira](https://i.im.ge/2023/12/29/xx0Uam.usuarioOliveira.png)](https://im.ge/i/xx0Uam)
 [![usuariosilvestre](https://i.im.ge/2023/12/29/xx0x1z.usuariosilvestre.png)](https://im.ge/i/xx0x1z)
 
@@ -65,14 +68,3 @@ Elas só poderão ser acessadas pelos usuários especificos de cada grupo.
 
 [![usuarioerrado1](https://i.im.ge/2023/12/29/xx9onh.usuarioerrado1.png)](https://im.ge/i/xx9onh)
 [![usuarioerrado2](https://i.im.ge/2023/12/29/xx9LkW.usuarioerrado2.png)](https://im.ge/i/xx9LkW)
-
-
-Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.
-
-1. Criar 2 grupos para dois de seus sobrenomes;
-2. Criar 4 usuários, dois para cada um dos sobrenomes;
-3. Compartilhar duas pastas com dois de seus sobrenome, compartilhado para o grupo com o sobrenome correspondente.
-
-
-
-
