@@ -52,9 +52,12 @@ http_access deny ipblock
 
 Basicamente, 
 
-ACL 1: bloqueia os dominios do facebook, wikipedia e globo;\
-ACL 2: bloqueia o browser firefox;\
-ACL 3: habilita o usuário para usar a maquina no horário definido;\
+ACL 1: bloqueia os dominios do facebook, wikipedia e globo;
+
+ACL 2: bloqueia o browser firefox;
+
+ACL 3: habilita o usuário para usar a maquina no horário definido;
+
 ACL 4: bloquia o acesso ao ip do instagram;
 
 
