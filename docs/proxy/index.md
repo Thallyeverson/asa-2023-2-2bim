@@ -39,7 +39,6 @@ acl hora_entrada time MTWHF 21:30-23:59
 acl ipblock dst 104.16.36.133
 ```
 
-
 E para aplicar essas regras usamos os comandos:
 
 ```
