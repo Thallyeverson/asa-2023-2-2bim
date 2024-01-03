@@ -47,7 +47,6 @@ http_access allow hora_entrada
 http_access deny firefox
 http_access deny ipblock
 ```
-    
 
 Basicamente, 
 
