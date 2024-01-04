@@ -162,8 +162,7 @@
 <h2 id="instalacao">Instalação</h2>
 <p>É preciso de uma máquina virtual linux com o samba e uma maquina com windowns 7 para se comunicar com o samba;</p>
 <p>Para instalar o samba na maquina virtual linux você precisará dar os seguintes comandos:</p>
-<pre><code>apk add samba-dc krb5
-</code></pre>
+<p><code>apk add samba</code></p>
 <h2 id="configuracao">Configuração</h2>
 <h4 id="criando-os-grupos">Criando os grupos</h4>
 <p><em>Dentro da OU <code>vendedores</code> vamos criar o grupo <code>oliveira</code>
@@ -184,8 +183,8 @@
 <a href="https://im.ge/i/xxhxEy"><img alt="GrupoSilvestre" src="https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png" /></a></p>
 <h4 id="criando-pastas-compartilhada">Criando pastas compartilhada</h4>
 <p>Para criar as pastas compartilhadas para esses grupos vamo na mv linux e usamos o código:
-    mkdir /srv/samba/oliveira
-    mkdir /srv/samba/silvestre</p>
+<code>mkdir /srv/samba/oliveira</code>
+<code>mkdir /srv/samba/silvestre</code></p>
 <p>serão criadas pastas no serviço samba e elas serão configuradas da seguinte forma:</p>
 <p>acessando o aquivo "/etc/samba/smb.conf"</p>
 <p><a href="https://im.ge/i/xxiAFC"><img alt="CONFIGDECOMPARTILHAMENTO" src="https://i.im.ge/2023/12/29/xxiAFC.CONFIGDECOMPARTILHAMENTO.png" /></a></p>
