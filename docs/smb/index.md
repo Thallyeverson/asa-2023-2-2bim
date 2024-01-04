@@ -48,9 +48,10 @@ Eles ficarão assim:
 
 Para criar as pastas compartilhadas para esses grupos vamo na mv linux e usamos o código:
 
-
-    mkdir /srv/samba/oliveira
-    mkdir /srv/samba/silvestre
+```sh
+mkdir /srv/samba/oliveira
+mkdir /srv/samba/silvestre
+```
 
 
 serão criadas pastas no serviço samba e elas serão configuradas da seguinte forma:

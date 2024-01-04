@@ -41,7 +41,11 @@ Para restartar o servidor DHCP usamos o seguinte comando:
 
 `rc-service dnsmasq restart`
 
+E para ver o histórico de informações do DHCP(Log) usamos o seguinte comando
 
+`tail -f /var/log/dnsmasq.log`
+
+![Alt text](../Imagens/DHCP/logDHCP.png)
 
 
 ## Teste
