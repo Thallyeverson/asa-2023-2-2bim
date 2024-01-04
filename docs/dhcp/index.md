@@ -21,6 +21,10 @@ Primeiro definimos a ip do servidor DHCP nas configurações de redes,
 
 Apos isso, vamos configurar o arquivo do DHCP. Eu nomeei como /etc/dnsmasq.d/asa.conf e quando acessar precisamos definir o range dos IPs
 
+para acessar usei o editor de texto nano, portanto ficou assim o comando:
+
+    nano /etc/dnsmasq.d/asa.conf
+
 [![configDHCP](https://i.im.ge/2024/01/04/3XvXSK.configDHCP.png)](https://im.ge/i/3XvXSK)
 
 Após feita a configuração na maquina linux, vamos para a windows configurar os clientes.
@@ -34,6 +38,12 @@ Ficará dessa forma:
 [![DHCPclientconfig](https://i.im.ge/2024/01/04/3X4MIr.DHCPclientconfig.png)](https://im.ge/i/3X4MIr)
 
 Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquinas 
+
+Para restartar o servidor DHCP usamos o seguinte comando:
+
+    rc-service dnsmasq restart
+
+
 
 
 ## Teste
