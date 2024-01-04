@@ -179,20 +179,26 @@
 <p>Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:</p>
 <p><a href="https://im.ge/i/3MxhJK"><img alt="configuraçãositeproxy" src="https://i.im.ge/2024/01/03/3MxhJK.configuracaositeproxy.png" /></a></p>
 <p>As ACLs usadas como regras para os testes foram as seguintes:</p>
-<p><code>acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com</code>\
-<code>acl firefox browser Firefox</code>\
-<code>acl hora_entrada time MTWHF 21:30-23:59</code>\
-<code>acl ipblock dst 104.16.36.133</code></p>
+<ul>
+<li><code>acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com</code></li>
+<li><code>acl firefox browser Firefox</code></li>
+<li><code>acl hora_entrada time MTWHF 21:30-23:59</code></li>
+<li><code>acl ipblock dst 104.16.36.133</code></li>
+</ul>
 <p>E para aplicar essas regras usamos os comandos:</p>
-<p><code>http_access deny site_ban</code>\
-<code>http_access allow hora_entrada</code>\
-<code>http_access deny firefox</code>\
-<code>http_access deny ipblock</code></p>
+<ul>
+<li><code>http_access deny site_ban</code></li>
+<li><code>http_access allow hora_entrada</code></li>
+<li><code>http_access deny firefox</code></li>
+<li><code>http_access deny ipblock</code></li>
+</ul>
 <p>Basicamente, </p>
-<p>ACL 1: bloqueia os dominios do facebook, wikipedia e globo;\
-ACL 2: bloqueia o browser firefox;\
-ACL 3: habilita o usuário para usar a maquina no horário definido;\
-ACL 4: bloquia o acesso ao ip do instagram;</p>
+<ul>
+<li>ACL 1: bloqueia os dominios do facebook, wikipedia e globo;</li>
+<li>ACL 2: bloqueia o browser firefox;</li>
+<li>ACL 3: habilita o usuário para usar a maquina no horário definido;</li>
+<li>ACL 4: bloquia o acesso ao ip do instagram;</li>
+</ul>
 <p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
 <p>Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala de aula.</p>
 <h2 id="teste">Teste</h2>

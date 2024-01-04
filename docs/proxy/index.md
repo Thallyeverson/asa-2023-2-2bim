@@ -6,7 +6,7 @@ Um proxy atua como intermediário entre um dispositivo e a internet. Ele recebe 
 
 Para configurar os proxy na maquina temos primeiro que instalar o pacote squid, e para fazer essa instalação usados o comando:
 
-`sudo apt update`\
+`sudo apt update`
 `sudo apt install squid` 
 
 ## Configuração
