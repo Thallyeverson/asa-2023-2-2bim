@@ -35,27 +35,27 @@ Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:
 
 As ACLs usadas como regras para os testes foram as seguintes:
 
-`acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com`\
-`acl firefox browser Firefox`\
-`acl hora_entrada time MTWHF 21:30-23:59`\
-`acl ipblock dst 104.16.36.133`
+* `acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com`
+* `acl firefox browser Firefox`
+* `acl hora_entrada time MTWHF 21:30-23:59`
+* `acl ipblock dst 104.16.36.133`
 
 
 
 E para aplicar essas regras usamos os comandos:
 
-`http_access deny site_ban`\
-`http_access allow hora_entrada`\
-`http_access deny firefox`\
-`http_access deny ipblock`
+* `http_access deny site_ban`
+* `http_access allow hora_entrada`
+* `http_access deny firefox`
+* `http_access deny ipblock`
 
 
 Basicamente, 
 
-ACL 1: bloqueia os dominios do facebook, wikipedia e globo;\
-ACL 2: bloqueia o browser firefox;\
-ACL 3: habilita o usuário para usar a maquina no horário definido;\
-ACL 4: bloquia o acesso ao ip do instagram;
+* ACL 1: bloqueia os dominios do facebook, wikipedia e globo;
+* ACL 2: bloqueia o browser firefox;
+* ACL 3: habilita o usuário para usar a maquina no horário definido;
+* ACL 4: bloquia o acesso ao ip do instagram;
 
 
 Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.

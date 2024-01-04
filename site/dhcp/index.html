@@ -164,8 +164,7 @@
 <p>Para esse processo precisamos de uma maquina virtual linux e uma maquina windows xp, a linux servirá para nosso servidor DHCP e a windows xp será nosso cliente.</p>
 <p>Para instalarmos o DHCP, precisamos instalar o pacote dnsmask, que oferece um servidor DHCP, alem de disponibilizar também servidores dns e TFTP</p>
 <p>O comando para instalar é:</p>
-<pre><code>apk add dnsmasq
-</code></pre>
+<p><code>apk add dnsmasq</code></p>
 <h2 id="configuracao">Configuração</h2>
 <p>Primeiro definimos a ip do servidor DHCP nas configurações de redes,</p>
 <p><a href="https://im.ge/i/3XvQE6"><img alt="dnsrede" src="https://i.im.ge/2024/01/04/3XvQE6.dnsrede.png" /></a></p>
@@ -181,8 +180,7 @@
 <p><a href="https://im.ge/i/3X4MIr"><img alt="DHCPclientconfig" src="https://i.im.ge/2024/01/04/3X4MIr.DHCPclientconfig.png" /></a></p>
 <p>Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquinas </p>
 <p>Para restartar o servidor DHCP usamos o seguinte comando:</p>
-<pre><code>rc-service dnsmasq restart
-</code></pre>
+<p><code>rc-service dnsmasq restart</code></p>
 <h2 id="teste">Teste</h2>
 <p>A configuração da maquina que pegará um IP aleatório dentro do Range ficará assim:</p>
 <p><a href="https://im.ge/i/3X4SMJ"><img alt="cloneDHCP" src="https://i.im.ge/2024/01/04/3X4SMJ.cloneDHCP.png" /></a></p>
