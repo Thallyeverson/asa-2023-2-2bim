@@ -10,7 +10,7 @@ Para instalarmos o DHCP, precisamos instalar o pacote dnsmask, que oferece um se
 
 O comando para instalar é:
 
-    apk add dnsmasq
+`apk add dnsmasq`
 
 
 ## Configuração
@@ -41,7 +41,7 @@ Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquin
 
 Para restartar o servidor DHCP usamos o seguinte comando:
 
-    rc-service dnsmasq restart
+`rc-service dnsmasq restart`
 
 
 

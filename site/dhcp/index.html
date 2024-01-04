@@ -159,14 +159,35 @@
             <div class="section">
               
                 <h1 id="dhcp">DHCP</h1>
+<p>O DHCP (Dynamic Host Configuration Protocol) é um protocolo de rede que automatiza a atribuição de endereços IP e configurações relacionadas a dispositivos em uma rede. Em vez de configurar manualmente cada dispositivo com um endereço IP, gateway e servidor DNS, o DHCP permite que os dispositivos obtenham essas informações automaticamente do servidor DHCP da rede. Isso simplifica a administração de redes, pois os endereços IP são atribuídos dinamicamente, facilitando a adição ou remoção de dispositivos na rede sem a necessidade de intervenção manual.</p>
 <h2 id="instalacao">Instalação</h2>
+<p>Para esse processo precisamos de uma maquina virtual linux e uma maquina windows xp, a linux servirá para nosso servidor DHCP e a windows xp será nosso cliente.</p>
+<p>Para instalarmos o DHCP, precisamos instalar o pacote dnsmask, que oferece um servidor DHCP, alem de disponibilizar também servidores dns e TFTP</p>
+<p>O comando para instalar é:</p>
+<pre><code>apk add dnsmasq
+</code></pre>
 <h2 id="configuracao">Configuração</h2>
-<p>Incluir o(s) nome(s) e o conteúdo do(s) arquivo(s) de configuração.</p>
-<ul>
-<li>Distribuir um intervalo (<em>range</em> em inglês) de endereços IP; (15 pontos)</li>
-<li>Reservar 2 endereços (IP fixo) fora do intervalo do item anterior. (5 pontos)</li>
-</ul>
+<p>Primeiro definimos a ip do servidor DHCP nas configurações de redes,</p>
+<p><a href="https://im.ge/i/3XvQE6"><img alt="dnsrede" src="https://i.im.ge/2024/01/04/3XvQE6.dnsrede.png" /></a></p>
+<p>Apos isso, vamos configurar o arquivo do DHCP. Eu nomeei como /etc/dnsmasq.d/asa.conf e quando acessar precisamos definir o range dos IPs</p>
+<p>para acessar usei o editor de texto nano, portanto ficou assim o comando:</p>
+<pre><code>nano /etc/dnsmasq.d/asa.conf
+</code></pre>
+<p><a href="https://im.ge/i/3XvXSK"><img alt="configDHCP" src="https://i.im.ge/2024/01/04/3XvXSK.configDHCP.png" /></a></p>
+<p>Após feita a configuração na maquina linux, vamos para a windows configurar os clientes.</p>
+<p>Vamos fazer configurações para duas máquinas, uma ficará com o ip reservado pelo endereço mac dela e outra pegará um ip aleatório dentro do range definido.</p>
+<p>Vamos em "configuração de rede", protocolo "TCP/IP" e lá definimos para pegar os IP automaticamente no servidor DHCP, e também colocamos o DNS prefercial e o alternativo. </p>
+<p>Ficará dessa forma:</p>
+<p><a href="https://im.ge/i/3X4MIr"><img alt="DHCPclientconfig" src="https://i.im.ge/2024/01/04/3X4MIr.DHCPclientconfig.png" /></a></p>
+<p>Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquinas </p>
+<p>Para restartar o servidor DHCP usamos o seguinte comando:</p>
+<pre><code>rc-service dnsmasq restart
+</code></pre>
 <h2 id="teste">Teste</h2>
+<p>A configuração da maquina que pegará um IP aleatório dentro do Range ficará assim:</p>
+<p><a href="https://im.ge/i/3X4SMJ"><img alt="cloneDHCP" src="https://i.im.ge/2024/01/04/3X4SMJ.cloneDHCP.png" /></a></p>
+<p>E a máquina onde foi definido um ip fixo para ela ficará assim:</p>
+<p><a href="https://im.ge/i/3XBoUh"><img alt="fixoconfig" src="https://i.im.ge/2024/01/04/3XBoUh.fixoconfig.png" /></a></p>
               
             </div>
           </div>

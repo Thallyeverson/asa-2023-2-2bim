@@ -6,8 +6,8 @@ Um proxy atua como intermediário entre um dispositivo e a internet. Ele recebe 
 
 Para configurar os proxy na maquina temos primeiro que instalar o pacote squid, e para fazer essa instalação usados o comando:
 
-    sudo apt update
-    sudo apt install squid
+`sudo apt update`\
+`sudo apt install squid` 
 
 ## Configuração
 
@@ -15,12 +15,14 @@ Para configurar, por medidas de segurança fazemos uma cópia do arquivo de conf
 
 Usamos o seguinte comando:
 
-    sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.bak
+`sudo cp /etc/squid/squid.conf /etc/squid/squid.conf.bak`
 
 Feito a cópia, agora podemos fazer as configurações.
 
 usando o comando
-    nano /etc/squid/squid.conf
+
+`nano /etc/squid/squid.conf`
+
 entramos no arquivo de configuração podemos adicioar as linhas de comando proxy
 
 ## ACLs
@@ -32,30 +34,27 @@ Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:
 [![configuraçãositeproxy](https://i.im.ge/2024/01/03/3MxhJK.configuracaositeproxy.png)](https://im.ge/i/3MxhJK)
 
 As ACLs usadas como regras para os testes foram as seguintes:
-```
-acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com
-acl firefox browser Firefox
-acl hora_entrada time MTWHF 21:30-23:59
-acl ipblock dst 104.16.36.133
-```
+
+`acl site_ban dstdomain .facebook.com .wikipedia.org .globo.com`\
+`acl firefox browser Firefox`\
+`acl hora_entrada time MTWHF 21:30-23:59`\
+`acl ipblock dst 104.16.36.133`
+
+
 
 E para aplicar essas regras usamos os comandos:
 
-```
-http_access deny site_ban
-http_access allow hora_entrada
-http_access deny firefox
-http_access deny ipblock
-```
+`http_access deny site_ban`\
+`http_access allow hora_entrada`\
+`http_access deny firefox`\
+`http_access deny ipblock`
+
 
 Basicamente, 
 
-ACL 1: bloqueia os dominios do facebook, wikipedia e globo;
-
-ACL 2: bloqueia o browser firefox;
-
-ACL 3: habilita o usuário para usar a maquina no horário definido;
-
+ACL 1: bloqueia os dominios do facebook, wikipedia e globo;\
+ACL 2: bloqueia o browser firefox;\
+ACL 3: habilita o usuário para usar a maquina no horário definido;\
 ACL 4: bloquia o acesso ao ip do instagram;
 
 

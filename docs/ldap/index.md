@@ -1,13 +1,11 @@
 # LDAP
 
 ## Instalação
-
 É preciso de uma máquina virtual linux com o samba e uma maquina com windowns 7 para se comunicar com o samba;
 
 Para instalar o samba na maquina virtual linux você precisará dar os seguintes comandos:
 
-    apk add samba-dc krb5
-
+`apk add samba`
 
 ## Configuração
 
