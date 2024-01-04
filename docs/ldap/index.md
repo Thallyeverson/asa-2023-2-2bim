@@ -27,7 +27,7 @@ Lá você define o ip estatico para a interface desejada.
 
 Desta maneira:
 
-[![configIP](https://i.im.ge/2023/12/29/xxLi9P.configIP.png)](https://im.ge/i/xxLi9P)
+![Alt text](../Imagens/LDAP/configIP.png)
 
 Depois disso vá em "Painel de controle" > "Sistema e Segurança" > "Sistema" > "Alterar configurações"
 
@@ -51,17 +51,16 @@ Para mover o grupos para as novas OUs bas clicar com o botão direito do mouse, 
 
 Desse geito:
 
-[![mover](https://i.im.ge/2023/12/29/xxkUDK.mover.png)](https://im.ge/i/xxkUDK)
-
+![Alt text](../Imagens/LDAP/mover.png)
 
 ## Testes
 
 As OUs "vendedores" e "rh" ficarão desse geitos com os respequitivos usuários;
 
-[![OUvendedores](https://i.im.ge/2023/12/29/xxhrl9.OUvendedores.png)](https://im.ge/i/xxhrl9)
-[![OUrh](https://i.im.ge/2023/12/29/xxhu0X.OUrh.png)](https://im.ge/i/xxhu0X)
+![Alt text](../Imagens/LDAP/OUvendedores.png)
+![Alt text](../Imagens/LDAP/OUrh.png)
 
 E adicionando usuários nos grupos ficará da seguinte forma; 
 
-[![GrupoOliveira](https://i.im.ge/2023/12/29/xxhCMa.GrupoOliveira.png)](https://im.ge/i/xxhCMa)
-[![GrupoSilvestre](https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png)](https://im.ge/i/xxhxEy)
+![Alt text](../Imagens/LDAP/GrupoOliveira.png)
+![Alt text](../Imagens/LDAP/GrupoSilvestre.png)

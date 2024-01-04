@@ -22,14 +22,14 @@ Para criar os grupos basta clicar com o botão direito do mouse, depois em "novo
 
 Para cada pasta vamos criar 4 usuários, para criar os usuários clicamos com o botão direito do mouse, "Novo" > "Usuário"
 
-[![grupoexemplo](https://i.im.ge/2023/12/29/xxUeCS.grupoexemplo.png)](https://im.ge/i/xxUeCS)
+![Alt text](../Imagens/SMB/grupoexemplo.png)
 
 Após criar todos os usuários.
 
 Ficarão dessa forma:
+![Alt text](../Imagens/SMB/OUvendedores.png)
 
-[![OUvendedores](https://i.im.ge/2023/12/29/xxhrl9.OUvendedores.png)](https://im.ge/i/xxhrl9)
-[![OUrh](https://i.im.ge/2023/12/29/xxhu0X.OUrh.png)](https://im.ge/i/xxhu0X)
+![Alt text](../Imagens/SMB/OUrh.png)
 
 Depois basta adicionar os usuários de cada pasta dentro de seu grupo.
 
@@ -39,8 +39,9 @@ Lá basta digitar o nome do grupo que você deseja.
 
 Eles ficarão assim:
 
-[![GrupoOliveira](https://i.im.ge/2023/12/29/xxhCMa.GrupoOliveira.png)](https://im.ge/i/xxhCMa)
-[![GrupoSilvestre](https://i.im.ge/2023/12/29/xxhxEy.GrupoSilvestre.png)](https://im.ge/i/xxhxEy)
+![Alt text](../Imagens/SMB/GrupoOliveira.png)
+
+![Alt text](../Imagens/SMB/GrupoSilvestre.png)
 
 
 #### Criando pastas compartilhada
@@ -53,18 +54,21 @@ serão criadas pastas no serviço samba e elas serão configuradas da seguinte f
 
 acessando o aquivo "/etc/samba/smb.conf"
 
-[![CONFIGDECOMPARTILHAMENTO](https://i.im.ge/2023/12/29/xxiAFC.CONFIGDECOMPARTILHAMENTO.png)](https://im.ge/i/xxiAFC)
+![Alt text](../Imagens/SMB/CONFIGDECOMPARTILHAMENTO.png)
+
 
 após isso é só entrar na máquina windows, digitar o comando "\\noronha" que é o nome da máquina e ver as pastas compartilhadas. 
+
 Elas só poderão ser acessadas pelos usuários especificos de cada grupo.
 
 ## Testes
 
+![Alt text](../Imagens/SMB/usu%C3%A1rioOliveira.png)
 
-[![usuárioOliveira](https://i.im.ge/2023/12/29/xx0Uam.usuarioOliveira.png)](https://im.ge/i/xx0Uam)
-[![usuariosilvestre](https://i.im.ge/2023/12/29/xx0x1z.usuariosilvestre.png)](https://im.ge/i/xx0x1z)
+![Alt text](../Imagens/SMB/usuariosilvestre.png)
 
 -   Se tentar acessar a pasta com um usuário de um outro grupo, aparecerá essa mensagem:
 
-[![usuarioerrado1](https://i.im.ge/2023/12/29/xx9onh.usuarioerrado1.png)](https://im.ge/i/xx9onh)
-[![usuarioerrado2](https://i.im.ge/2023/12/29/xx9LkW.usuarioerrado2.png)](https://im.ge/i/xx9LkW)
+![Alt text](../Imagens/SMB/usuarioerrado1.png)
+
+![Alt text](../Imagens/SMB/usuarioerrado2.png)

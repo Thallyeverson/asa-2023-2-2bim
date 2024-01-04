@@ -31,7 +31,7 @@ As Listas de Controle de Acesso (ACLs) em um proxy referem-se a regras que contr
 
 Configuramos no browser, o ip e a porta para habilitar o proxy na máquina:
 
-[![configuraçãositeproxy](https://i.im.ge/2024/01/03/3MxhJK.configuracaositeproxy.png)](https://im.ge/i/3MxhJK)
+![Alt text](../Imagens/PROXY/configura%C3%A7%C3%A3ositeproxy.png)
 
 As ACLs usadas como regras para os testes foram as seguintes:
 
@@ -67,22 +67,25 @@ Fazer a configuração de 4 ACLs distintas, conforme a atividade passada em sala
 
 O arquivo de configuração ficou assim:
 
-[![acls_permissoes](https://i.im.ge/2024/01/03/3MEbe6.acls-permissoes.png)](https://im.ge/i/3MEbe6)
+![Alt text](../Imagens/PROXY/acls_permissoes.png)
+
 
 Os logs de utilzaçõa das regras:
 
-[![Tempo_real](https://i.im.ge/2024/01/03/3ME4vp.Tempo-real.png)](https://im.ge/i/3ME4vp)
+![Alt text](../Imagens/PROXY/Tempo_real.png)
 
 Os sites que as regras proxys foram definidas, ficaram da seguinte maneira:
 
-[![globo_block](https://i.im.ge/2024/01/03/3MxAnq.globo-block.png)](https://im.ge/i/3MxAnq)
-[![wikipedia_block](https://i.im.ge/2024/01/03/3MxxPP.wikipedia-block.png)](https://im.ge/i/3MxxPP)
-[![facebook](https://i.im.ge/2024/01/03/3Mxbuf.facebook.png)](https://im.ge/i/3Mxbuf)
+![Alt text](../Imagens/PROXY/globo_block.png)
+
+![Alt text](../Imagens/PROXY/wikipedia_block.png)
+
+![Alt text](../Imagens/PROXY/facebook.png)
 
 Ao tentar usar o github com a permissão de browser, não é permitido
 
-[![GITHUB](https://i.im.ge/2024/01/03/3M3S4C.GITHUB.png)](https://im.ge/i/3M3S4C)
+![Alt text](../Imagens/PROXY/GITHUB.png)
 
 E após entrar no tempo definido na regra da 3ª linha, o site github é habilitado para uso
 
-[![githubtempo](https://i.im.ge/2024/01/03/3M3fbD.githubtempo.png)](https://im.ge/i/3M3fbD)
+![Alt text](../Imagens/PROXY/githubtempo.png)

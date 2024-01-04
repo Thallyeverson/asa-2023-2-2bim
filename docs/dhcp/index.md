@@ -17,7 +17,6 @@ O comando para instalar é:
 
 Primeiro definimos a ip do servidor DHCP nas configurações de redes,
 ![Alt text](../Imagens/DHCP/dnsrede.png)
-[![dnsrede](https://i.im.ge/2024/01/04/3XvQE6.dnsrede.png)](https://im.ge/i/3XvQE6)
 
 Apos isso, vamos configurar o arquivo do DHCP. Eu nomeei como /etc/dnsmasq.d/asa.conf e quando acessar precisamos definir o range dos IPs
 
@@ -25,7 +24,7 @@ para acessar usei o editor de texto nano, portanto ficou assim o comando:
 
     nano /etc/dnsmasq.d/asa.conf
 
-[![configDHCP](https://i.im.ge/2024/01/04/3XvXSK.configDHCP.png)](https://im.ge/i/3XvXSK)
+![Alt text](../Imagens/DHCP/configDHCP.png)
 
 Após feita a configuração na maquina linux, vamos para a windows configurar os clientes.
 
@@ -34,8 +33,7 @@ Vamos fazer configurações para duas máquinas, uma ficará com o ip reservado 
 Vamos em "configuração de rede", protocolo "TCP/IP" e lá definimos para pegar os IP automaticamente no servidor DHCP, e também colocamos o DNS prefercial e o alternativo. 
 
 Ficará dessa forma:
-
-[![DHCPclientconfig](https://i.im.ge/2024/01/04/3X4MIr.DHCPclientconfig.png)](https://im.ge/i/3X4MIr)
+![Alt text](../Imagens/DHCP/DHCPclientconfig.png)
 
 Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquinas 
 
@@ -50,9 +48,10 @@ Para restartar o servidor DHCP usamos o seguinte comando:
 
 A configuração da maquina que pegará um IP aleatório dentro do Range ficará assim:
 
-[![cloneDHCP](https://i.im.ge/2024/01/04/3X4SMJ.cloneDHCP.png)](https://im.ge/i/3X4SMJ)
+![Alt text](../Imagens/DHCP/cloneDHCP.png)
 
 E a máquina onde foi definido um ip fixo para ela ficará assim:
 
-[![fixoconfig](https://i.im.ge/2024/01/04/3XBoUh.fixoconfig.png)](https://im.ge/i/3XBoUh)
+![Alt text](../Imagens/DHCP/fixoconfig.png)
+
 
