@@ -166,26 +166,26 @@
 <p>O comando para instalar é:</p>
 <p><code>apk add dnsmasq</code></p>
 <h2 id="configuracao">Configuração</h2>
-<p>Primeiro definimos a ip do servidor DHCP nas configurações de redes,</p>
-<p><a href="https://im.ge/i/3XvQE6"><img alt="dnsrede" src="https://i.im.ge/2024/01/04/3XvQE6.dnsrede.png" /></a></p>
+<p>Primeiro definimos a ip do servidor DHCP nas configurações de redes,
+<img alt="Alt text" src="../Imagens/DHCP/dnsrede.png" /></p>
 <p>Apos isso, vamos configurar o arquivo do DHCP. Eu nomeei como /etc/dnsmasq.d/asa.conf e quando acessar precisamos definir o range dos IPs</p>
 <p>para acessar usei o editor de texto nano, portanto ficou assim o comando:</p>
 <pre><code>nano /etc/dnsmasq.d/asa.conf
 </code></pre>
-<p><a href="https://im.ge/i/3XvXSK"><img alt="configDHCP" src="https://i.im.ge/2024/01/04/3XvXSK.configDHCP.png" /></a></p>
+<p><img alt="Alt text" src="../Imagens/DHCP/configDHCP.png" /></p>
 <p>Após feita a configuração na maquina linux, vamos para a windows configurar os clientes.</p>
 <p>Vamos fazer configurações para duas máquinas, uma ficará com o ip reservado pelo endereço mac dela e outra pegará um ip aleatório dentro do range definido.</p>
 <p>Vamos em "configuração de rede", protocolo "TCP/IP" e lá definimos para pegar os IP automaticamente no servidor DHCP, e também colocamos o DNS prefercial e o alternativo. </p>
-<p>Ficará dessa forma:</p>
-<p><a href="https://im.ge/i/3X4MIr"><img alt="DHCPclientconfig" src="https://i.im.ge/2024/01/04/3X4MIr.DHCPclientconfig.png" /></a></p>
+<p>Ficará dessa forma:
+<img alt="Alt text" src="../Imagens/DHCP/DHCPclientconfig.png" /></p>
 <p>Quando terminado a configuração, restartamos o dnsmasq e reiniciamos as maquinas </p>
 <p>Para restartar o servidor DHCP usamos o seguinte comando:</p>
 <p><code>rc-service dnsmasq restart</code></p>
 <h2 id="teste">Teste</h2>
 <p>A configuração da maquina que pegará um IP aleatório dentro do Range ficará assim:</p>
-<p><a href="https://im.ge/i/3X4SMJ"><img alt="cloneDHCP" src="https://i.im.ge/2024/01/04/3X4SMJ.cloneDHCP.png" /></a></p>
+<p><img alt="Alt text" src="../Imagens/DHCP/cloneDHCP.png" /></p>
 <p>E a máquina onde foi definido um ip fixo para ela ficará assim:</p>
-<p><a href="https://im.ge/i/3XBoUh"><img alt="fixoconfig" src="https://i.im.ge/2024/01/04/3XBoUh.fixoconfig.png" /></a></p>
+<p><img alt="Alt text" src="../Imagens/DHCP/fixoconfig.png" /></p>
               
             </div>
           </div>
