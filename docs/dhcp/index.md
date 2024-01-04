@@ -16,7 +16,7 @@ O comando para instalar é:
 ## Configuração
 
 Primeiro definimos a ip do servidor DHCP nas configurações de redes,
-
+![Alt text](../Imagens/DHCP/dnsrede.png)
 [![dnsrede](https://i.im.ge/2024/01/04/3XvQE6.dnsrede.png)](https://im.ge/i/3XvQE6)
 
 Apos isso, vamos configurar o arquivo do DHCP. Eu nomeei como /etc/dnsmasq.d/asa.conf e quando acessar precisamos definir o range dos IPs
